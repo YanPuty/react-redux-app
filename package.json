@@ -1,0 +1,36 @@
+{
+  "name": "react-redux-app",
+  "version": "1.0.0",
+  "description": "Working on react with redux",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development parcel ./src/index.html --open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "parcel build ./src/index.html"
+  },
+  "author": "Yan Puty",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^4.3.3",
+    "antd-scss-theme-plugin": "^1.0.8",
+    "bootstrap": "^4.5.0",
+    "cross-env": "^7.0.2",
+    "history": "^4.10.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
+    "reactstrap": "^8.4.1",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-form": "^8.3.6",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.8"
+  }
+}
