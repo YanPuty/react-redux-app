@@ -1,18 +1,23 @@
-import React from "react";
-import Authentication from "../module/Authentication/Index";
+import React, { Fragment } from "react";
+import { BrowserRouter, Router as MainRouter } from "react-router-dom";
 
-// Authentication Layout
-import AuthenticationLayout from "../components/Layout/Authentication"
+// Component
+import Router from "../routes";
+import { history } from "../utils/history";
 
-export class App extends React.Component {
-
+class App extends React.Component {
     render() {
-    
         return (
-            <AuthenticationLayout>
-                <Authentication form="loginForm"/>
-            </AuthenticationLayout>
+            <BrowserRouter>
+                <Fragment>
+                    <MainRouter history={history}>
+                        <Router />
+                    </MainRouter>
+                </Fragment>
+            </BrowserRouter>
         );
     }
 
 }
+
+export default App;
