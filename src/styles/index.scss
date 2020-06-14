@@ -1,2 +1,9 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import '~antd/dist/antd.css';
+
+.content-center-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
