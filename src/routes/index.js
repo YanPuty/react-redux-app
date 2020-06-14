@@ -16,11 +16,7 @@ class Router extends Component {
     return (
       <Switch>
         <Route path="/dashboard" component={Dashbaord} />
-        <PrivateRoute
-          path="/login"
-          component={container}
-          authenticationComponent={LoginForm}
-        />
+        <PrivateRoute path="/login" component={container} authenticationComponent={LoginForm} />
         <Route path="/" component={HomePage} />
         <Route component={NotFoundPage} />
       </Switch>
