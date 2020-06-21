@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 
 // Components
-import HomePage from "../module/home";
+import HomePage from "../module/HomePage";
 import LoginForm from "../components/Layout/LoginForm";
 import Dashbaord from "../module/Dashbaord";
 import NotFoundPage from "../components/NotFoundPage";
