@@ -1,6 +1,8 @@
 // Libs
 import React, { Component } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, withRouter } from "react-router-dom";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
 // Components
 import HomePage from "../module/HomePage";
@@ -24,4 +26,17 @@ class Router extends Component {
   }
 }
 
-export default Router;
+Router.propTypes = {
+};
+
+const mapStateToProps = (state) => {
+  return {
+  };
+};
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+  };
+};
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Router));

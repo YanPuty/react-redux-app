@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 
 // Action
@@ -8,8 +8,9 @@ import { getAllBusiness } from "../../action";
 
 class HomePage extends React.Component {
 
-    constructor() {
-        super();
+    componentDidMount() {
+        const { getAll } = this.props;
+        getAll();
     }
 
     render() {
@@ -27,15 +28,17 @@ HomePage.propTypes = {
     getAll: PropTypes.func,
 }
 
-const mapStateTopProps = (state) => {
+const mapStateToProps = (state) => {
     return {
     };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    getAll: dispatch(getAllBusiness())
+    getAll: () => dispatch(getAllBusiness())
   };
 };
 
-export default  connect(mapStateTopProps, mapDispatchToProps)(HomePage);
+export default withRouter(
+    connect(mapStateToProps, mapDispatchToProps)(HomePage)
+  );
