@@ -2,13 +2,14 @@
 import React, { Component } from "react";
 import { Switch, Route, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-import PropTypes from "prop-types";
 
 // Components
 import HomePage from "../module/HomePage";
 import LoginForm from "../components/Layout/LoginForm";
 import Dashbaord from "../module/Dashbaord";
 import NotFoundPage from "../components/NotFoundPage";
+
+// Routes
 import container from "../container";
 import PrivateRoute from "../container/private-route";
 

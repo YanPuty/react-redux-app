@@ -1,4 +1,3 @@
-import { func } from "prop-types";
 import { GET_BUSINESS_REQUEST_SUCCESS } from "../constants/Index";
 
 const initialState = {
