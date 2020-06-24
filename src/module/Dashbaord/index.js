@@ -1,12 +1,10 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 class Dashbaord extends React.Component {
 
     render() {
         return (
-            <div>
-                <h5 style={{ textAlign: "center" }}>this is Dashbaord</h5>
-            </div>
+            <div className="container">This is dashboard</div>
         );
     }
 }
